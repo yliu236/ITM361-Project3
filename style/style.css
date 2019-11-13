@@ -18,6 +18,25 @@ p {
     text-align: center;
 }
 
+.navigation{
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  font-size: medium;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation ul li {
+  display:inline;
+}
+
 .center{
   display: block;
   margin-left: auto;
@@ -102,25 +121,6 @@ p {
   float:left;
 	padding:0 2em;
   width: 40%;
-}
-
-.navigation{
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
-  font-size: medium;
-}
-
-.navigation ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-}
-
-.navigation ul li {
-  display:inline;
 }
 
 #page{
