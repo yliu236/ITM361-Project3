@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="map.css">
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-  <script async type="text/javascript" src="map.js"></script>
-</head>
-<body>
-<div id="wrapper">
-  <div id="canvas"></div>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/map.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+            <h1>Where I like to visit the most</h1>
+            </div>
+            <div class="navigation">
+             <ul>
+                <li> <strong><a href="index.html"> Get to know Yongsi Liu|</a><strong></li>
+                <li> <strong><a href="resume.html"> My Resume|</a><strong></strong></li>
+                <li><strong><a href="languages.html">Languages|</a></strong></li>
+                <li><strong><a href="map.html">Chicago Map </a></strong></li>
+            </ul>
+            </div>
+        </header>
+        <div id="map"></div>
+        <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 41.881, lng: -87.623}, 
+            zoom: 13    
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCZCE8pkufwtFzGaBVEpDwgYXBmmLesjuY&callback=initMap" async defer></script>
+        <p>This is one of place I love to go to when I have time.</p>
+    </body>
 </html>
