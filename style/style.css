@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header{
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  width: 100%;
+}
+
+img{
+  margin-top: 2em;
+}
+p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.iframe{
+  width:100%;
+  margin: auto;
+}
+
+.nav {
+  width: 100%;
+  background-color: #6495ED;
+  text-align: center;
+  display: block;
+}
+
+.nav ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color:#6495ED;
+       display: inline-block;
+   }
+
+.nav li {
+       font-family: 'Oswald', sans-serif;
+       float: left;
+       font-size: 1.2em;
+   }
+
+.nav  li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+.nav a:hover {
+     background-color: #005f5f;
+   }
+
+.nav a.active {
+     background-color: #fff;
+     color: #444;
+     cursor: default;
+   }
+.center{
+  text-align: center;
+}
+.block{
+  margin: 50px;
+  border: 3px solid black;
+  background-color: white;
+  padding: 20px;
+}
+#layout{
+	flex-direction: column;
+  display: flex;
+  margin:5vh auto;
+  max-width: 80%;
+}
+
+.list{
+	width:100%;
+	display: flex;
+  margin:3em 0;
+}
+
+.left{
+	width:50%;
+	float:left;
+  padding:0;
+
+}
+
+.right{
+	display:block;
+  float:left;
+	padding:0 2em;
+  width: 40%;
+}
+
+.navigation{
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  font-size: medium;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation ul li {
+  display:inline;
+}
+
+#page{
+  background-color: lightgrey;
+  border: 3px solid black;
+  padding: 25px;
+	margin:5vh auto;
+	max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+h2,h3,h4
+{
+  background-color: #FFF8DC;
+  text-align: center;
+}
+.heading
+{
+  background-color: #7FFFD4;
+  padding: 20px;
+}
+
+footer{
+  text-align: center;
+  background-color:black;
+  color: white;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+
+#index{
+	flex-direction: column;
+	display: inline;
+	margin:7vh auto;
+	max-width: 100%;
+}
+
+#resume{
+	flex-direction: column;
+	display: flex;
+	margin:3vh auto;
+	max-width: 100%;
+}
+
+#language {
+	flex-direction: column;
+	display: flex;
+  max-width: 100%;
+  margin:1vh auto;
+}
+
