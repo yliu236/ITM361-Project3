@@ -175,3 +175,10 @@ footer{
   margin:1vh auto;
 }
 
+#map{
+  flex-direction: column;
+  display: flex;
+  margin:3vh auto;
+  max-width: 100%;
+}
+
