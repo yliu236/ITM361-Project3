@@ -1,16 +1,18 @@
-var marker;
-function initMap() { 
-    var map = new google.maps.Map(document.getElementById("map"), {
-        center: {lat: 41.881, lng: -87.623}, 
-        zoom: 13    
+function initMap() {
+    var fp = {lat: 41.881, lng: -87.623};
+    var map = new google.maps.Map(document.getElementById('map'), {center: fp, zoom: 14});
+
+    var infowindow = new google.maps.InfoWindow({
+        content: 'Shedd Aquarium'
+    });
+
+    var marker = new google.maps.Marker({
+        position: fp,
+        map: map,
+        icon: 'images/location.jpg'
     });
     
-    marker = new google.maps.Marker({
-        map: map,
-        draggable: true,
-        animation: google.maps.Animation.DROP,
-        position: {lat: 41.8663, lng: -87.6068}
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
     });
-    marker.addListner('click', toggleBounce);
 }
-

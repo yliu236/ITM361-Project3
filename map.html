@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/map.css">
         <link rel="stylesheet" href="style/style.css">
+        <script src="map.js"></script>
         <title>Chicago map</title>
     </head>
     <body>
         <header>
             <div class="heading">
-            <h1>Where I like to visit the most</h1>
+            <h1>Chicago Map</h1>
             </div>
             <div class="navigation">
              <ul>
@@ -21,6 +21,7 @@
             </ul>
         </div>
         </header>
+        <h3>This is one of place I love to go to when I have time.</h3>
         <div id="map"></div>
         <script>
         var map;
@@ -32,6 +33,8 @@
         }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCZCE8pkufwtFzGaBVEpDwgYXBmmLesjuY&callback=initMap" async defer></script>
-        <h3>This is one of place I love to go to when I have time.</h3>
+     <div id="wrapper">
+            <div id="map"></div>
+    </div>
     </body>
 </html>
