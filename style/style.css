@@ -11,11 +11,55 @@ header{
 }
 
 img{
-  margin-top: 2em;
+  margin-top: 3em;
 }
 p {
     font-size: 1em;
     text-align: center;
+}
+
+@media only screen and (min-width: 420px) {
+   img {
+      margin-top: 2em;
+   }
+   body {
+      background-color: lightblue;
+   }
+   .index div#navigation {
+      font-weight: 200;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      font-size: medium;
+   }
+   nav {
+      font-size: 0.7vw;
+   }
+}
+
+@media only screen and (min-width: 703px) {
+   img {
+      max-width: 100%;
+      max-height: 400px;
+   }
+   body {
+      background-color: whitesmoke;
+   }
+   .index {
+      background: white;
+   }
+   . div#default {
+      font-weight: 200;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      font-size: medium;
+   }
+   nav {
+      font-size: 1.0vw;
+   }
 }
 
 .navigation{
@@ -96,6 +140,8 @@ p {
   background-color: white;
   padding: 20px;
 }
+
+
 #layout{
 	flex-direction: column;
   display: flex;
@@ -142,6 +188,11 @@ h2,h3,h4
   background-color: #7FFFD4;
   padding: 20px;
 }
+
+button {
+    align-self: center;
+}
+
 
 footer{
   text-align: center;
